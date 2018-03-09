@@ -7,4 +7,4 @@ Thus project may take a month time
 
 I'm Harry's contributor
 Please click following links to access the code
-https://github.com/godlikeanyone/2017A2CS/tree/master/A2%20Project%201
+https://github.com/godlikeanyone/2017A2CS/tree/master/A2_Project_1
