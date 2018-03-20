@@ -1,0 +1,28 @@
+1.1
+ JSP diagrams can show the structure of the program, including all the functions and parameters. It can also indicate the iterations and chooses to be made
+
+1.2 
+the * means to iterate the operationall the ¡£meand to select between two situations
+
+1.3
+NOT EOF salary>50 slalary>=90 projectmanager leaddeveloper manager
+
+1.4
+Add another block that says salary>70¡£ if Flase, assign the role as leaddeveloper if True, goes to the selection of salary>=90 change that False situation to assign the role as consultant
+
+1.5
+Edit line 5 to IF salary>=70 Change line 6 to IF salary>=90 Change rest of the program to be like: THEN Role<---projectmanager ElSE Role<---consultant ENDIF ELSE Role<---leaddeveloper ELSE Role<---manager
+
+1.6
+def determinerole(salary):
+    if salary>50:
+        if salary>70:
+            if salary>=90
+                return 'projectmanager'
+            else:
+                return 'consultant'
+        else:
+            return 'leaddeveloper'
+    else:
+        return 'manager'
+
