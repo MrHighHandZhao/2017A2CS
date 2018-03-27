@@ -1,0 +1,40 @@
+ male(me). 
+ male(dad). 
+ male(grandpa). 
+ male(brother). 
+ female(mom). 
+ female(grandma). 
+ female(sister). 
+ 
+ 
+ father(grandpa, dad). 
+ father(dad, me). 
+ mother(grandma, dad). 
+ mother(mom, me). 
+ father(dad, brother). 
+ father(dad, sister). 
+ mother(mom, brother). 
+ mother(mom, sister).  
+ 
+ brother(X,Y) :- 
+ 	male(X), 
+ 	parent(Z,X), 
+ 	parent(Z,Y). 
+   
+ 
+ sister(X,Y) :- 
+ 	female(X), 
+ 	parent(Z,X), 
+ 	parent(Z,Y).   
+ 
+ son(X,Y) :- 
+ 	male(X), 
+ 	parent(X,Y). 
+  
+ daughter(X,Y) :- 
+ 	female(X), 
+ 	parent(X,Y).  
+ 
+ married(X,Y):- 
+ 	parent(X,Z), 
+ 	parent(Y,Z). 
