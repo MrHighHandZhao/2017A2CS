@@ -1,0 +1,31 @@
+1
+capitalCity(paris). 
+capitalCity(berlin). 
+capitalCity(cairo). 
+
+
+2
+male(jake). 
+female(emma). 
+parent(jake, emma). 
+father(F, C):- male(F),parent(F, C). 
+
+
+3
+parent(oliver, jack). 
+parent(mike, oliver). 
+parent(finn, mike). 
+4
+ancestor(A, B) :- parent(A, B). 
+ancestor(A, B) :- parent(A, X), ancestor(X, B). 
+
+5
+factorial(0, 1). 
+factorial(N, Result) :- 
+  M is N-1, 
+  factorial(M, PartResult), 
+  Result is PartResult*N. 
+
+6
+writeList([apple, banana, orange]). 
+writeList([H|T]):- writeList(H), n1, writeList(T). 
