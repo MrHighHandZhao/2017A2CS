@@ -1,0 +1,27 @@
+1.a
+2 binary bits
+it will return 1 if both inputs are 1
+other occession, return 0
+
+1.b
+AND #00001111
+
+1.c
+IN
+AND mask LSL 4
+STO
+IN
+AND mask
+OR result
+STO result
+END
+
+OF
+
+2
+LDR #0
+IN
+STI STRING
+INC IX
+CMP #33
+END
